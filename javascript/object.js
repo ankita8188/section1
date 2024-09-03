@@ -38,3 +38,49 @@ console.log(smartphone)
 const {email,password }=user
 console.log(email)
 console.log(password)
+const arr=[5,2,6,8,6]
+const[a, , ,d]=arr;
+console.log(a)
+//let [p, y, z] = [2,5,8]
+//[y,z]=[z,y]
+//console.log(y,z)
+const smartphonearray=[
+{
+    brand:"samsung",
+    model:'s24 ultra',
+    price:99999,
+    colors:['black','blue','white']
+},
+{
+    brand:"google",
+    model:'s24 ultra',
+    price:60099,
+    colors:['black','blue','white']
+},
+{
+    brand:"raelme",
+    model:'s24 ultra',
+    price:97899,
+    colors:['black','blue','white']
+},
+{
+    brand:"oopo",
+    model:'s24 ultra',
+    price:4599979,
+    colors:['black','blue','white']
+},
+{
+    brand:"iphone",
+    model:'s28 ultra',
+    price:54978999,
+    colors:['black','blue','white']
+}
+];
+console.log(smartphonearray[3].price)
+console.log(smartphonearray[1].colors[1]);
+const budget = smartphonearray.filter((phone) => { return phone.price<50000});
+console.log(budget)
+//const smart=smartphonearray.filter( (sm) => {return sm.brand==='sumsung'});
+//console.log(smart)
+//
+const samsung=smartphonearray.filter(phone)
