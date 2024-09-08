@@ -64,6 +64,19 @@ const products = [
         model: "Ultraboost"
     }
 ];
-//console.log(products.category)
-const categorys = products.filter((n)=>{return n.category ==="Fashion"});
+console.log(products[1].category)
+const categorys = products.filter((n)=>{ return n.category==="Fashion" });
 console.log(categorys)
+const typ=products.filter((t)=>{ return t.type==="Laptop"});
+console.log(typ)
+const brands=products.filter((b)=>{ return b.brand==='Adidas'});
+console.log(brands)
+
+const prices=products.filter((p)=>{ return p.price>280});
+console.log(prices)
+console.log("-------------------------------------------")
+const ps=products.filter((p1)=>{ return p1.price<280});
+console.log(ps)
+console.log("--------------------------------------------")
+const sorted = products.filter((prod1,prod2)=>{return prod1.price - prod2.price});
+console.log(sorted)

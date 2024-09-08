@@ -78,9 +78,15 @@ const smartphonearray=[
 ];
 console.log(smartphonearray[3].price)
 console.log(smartphonearray[1].colors[1]);
-const budget = smartphonearray.filter((phone) => { return phone.price<50000});
+const budget = smartphonearray.filter((phone) => { return phone.price>50000});
 console.log(budget)
-//const smart=smartphonearray.filter( (sm) => {return sm.brand==='sumsung'});
-//console.log(smart)
-//
-const samsung=smartphonearray.filter(phone)
+const smart=smartphonearray.filter( (sm) => {return sm.brand==='sumsung'});
+console.log(smart)
+const brands=smartphonearray.map((phone)=>{ return phone.brand});
+console.log(brands)
+console.log( new Set(brands))
+console.log(Array.from( new Set(brands)))
+const abs =smartphonearray.map((ab)=>{ return ab.brand+" "+ ''+ab.model + ''+ ab.price} );
+console.log(abs)
+const abss =smartphonearray.map((ab)=>{ return  `${ab.brand} ${ab.model} -${ab.price} `});
+console.log(abss)
