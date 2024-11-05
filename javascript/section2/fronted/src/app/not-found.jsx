@@ -1,16 +1,15 @@
 import React from 'react'
 
-const Notfound = () => {
+const notFound = () => {
   return (
-    <div className='flex items-center justify-center'>
-        <div>
-            <img className='block w-full  mx=auto' src="error.webp" alt="Not found" />
-            <h1 className='text-9xl font-bold text-center'>404</h1>
-            <h4 className='text-3xl text-center'>page not found</h4>
-            <a href="/" className='py-2 px-4 rounded-lg bg-grey-200 border mt-4 text-center block font-bold'>back to home</a>
-        </div>
+    <div className='h-screen bg-grey-200 flex justify-center items-center'>
+          <div className='text-center space-y-5'>
+            <h1 className='text-9xl font-bold'>404</h1>
+            <p className='text-3xl font-bold'>page not found</p>
+            <button className='bg-black rounded-lg px-4 py-2 text-white'>GO To Homepage</button>
+          </div>
     </div>
   )
 }
 
-export default Notfound;
+export default notFound;

@@ -1,20 +1,18 @@
+import Button from '@/components/Button'
+import Card from '@/components/Card'
 import Navbar from '@/components/Navbar'
 import React from 'react'
 
-const Home = () => {
+const page = () => {
   return (
     <div>
-      
-      <h1 className="text-3xl text-center mt-5">My Home Page</h1>
-      <p style={{color:"blue",fontSize:30, textAlign:'center'}}> welcome to home</p>
-      <label htmlFor="">some label</label>
-      <input type="text" />
-      <hr />
-      <br />
-      <button className='btn'>submit</button>
-      <button className='btn'>login button</button>
+      <h1>HOME PAGE</h1>
+      <Card title="1" discription="card 10"/>
+      <Card title="2"/>
+      <Card image={{"backgroundImage":"url('/image/moon.jpg')"}}/>
+      <Button>submit</Button>
     </div>
   )
 }
 
-export default Home
+export default page

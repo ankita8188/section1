@@ -14,7 +14,13 @@ const EventHandling = () => {
     }
   return (
     <div className='max-w-2xl mx-auto'
-    onMouseMove={(e)=>{console.log(e.clientX,e.clientY, e.movementX, e.movementY) }}>
+    onMouseMove={(e)=>{console.log(e.clientX,e.clientY, e.movementX, e.movementY) 
+      const el=document.getElementById('circle');
+      el.style.left=e.clientX-10+'px';
+      el.style.top=e.clientY-10+'px';
+
+    }}>
+      <div className=' size-8 rounded-full bg-black absolute ' id='circle'></div>
         <h1 className='text-3xl text-center font-bold mt-5'>Event Handling</h1>
         <button className='bg-black p-3 rounded mt-4 text-white'
         onClick={()=>{alert('button waas clicked')}}>click me
